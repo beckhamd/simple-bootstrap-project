@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>California National Parks - Channel Islands National Park</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary py-2">
+    <a class="navbar-brand" href="index.html">California National Parks</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Featured Parks</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="yosemite.html">Yosemite National Park</a>
+            <a class="dropdown-item" href="death_valley.html">Death Valley National Park</a>
+            <a class="dropdown-item" href="channel_islands.html">Channel Islands National Park</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="more_parks.html">More Parks</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <div style="position: relative">
+      <figure class="figure" style="display: block !important">
+        <img class="img-fluid rounded" src="images/channel_islands_2.jpg" alt="Channel Islands National Park">
+        <div class="img-caption"><h1>Channel Islands National Park</h1></div>
+        <figcaption class="figure-caption text-right">Photo by <a href="https://www.garykavanaghimages.com/landscapes/" target="_blank">Gary Kavanagh</a></figcaption>
+      </figure>
+    </div>
+    <div class="jumbotron mb-3 p-3">
+      <h3>Information</h3>
+      <p>Channel Islands National Park encompasses five remarkable islands and their ocean environment, preserving and protecting a wealth of natural and cultural resources. Isolation over thousands of years has created unique animals, plants, and
+        archeological resources found nowhere else on Earth and helped preserve a place where visitors can experience coastal southern California as it once was.</p>
+      <h3>Maps</h3>
+      <div id="map" class="mb-3"></div>
+      <p><a href="http://npmaps.com/wp-content/uploads/channel-islands-map.pdf" class="btn btn-primary">Download Map&nbsp;&nbsp;(PDF, 2.6 MB)</a></p>
+      <h3>Links</h3>
+      <ul>
+        <li><a href="https://www.nps.gov/chis/index.htm" target="_blank">National Park Service</a></li>
+        <li><a href="https://www.nationalparks.org/explore-parks/channel-islands-national-park" target="_blank">National Park Foundation</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    function initMap() {
+      var location = {
+        lat: 33.996,
+        lng: -119.769
+      };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        center: location,
+        mapTypeId: 'terrain'
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARSbTv7h-7YyHU-Z5kKftg13IQ--vfpEU&callback=initMap"></script>
+</body>
+</html>

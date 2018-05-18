@@ -1,0 +1,35 @@
+.carousel-caption {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.img-caption {
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
