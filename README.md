@@ -1,3 +1,5 @@
 # Simple Bootstrap Project
 
-This is a small website written in HTML, CSS, and JavaScript using the Bootstrap front-end framework for a web development class. A live demo can be found [here](https://web.engr.oregonstate.edu/~beckhamd/cs290/).
+[Live Demo](https://web.engr.oregonstate.edu/~beckhamd/cs290/)
+
+This is a small website written with Bootstrap for a web development class. The website is fully responsive.
